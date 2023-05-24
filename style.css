@@ -7,6 +7,7 @@ body {
 .image-container {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
   }
   
   .image-wrapper {
@@ -41,3 +42,28 @@ body {
     color: blue;
     font-size: 2em;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center; /* 中央配置 */
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* optional: to create some space between the buttons */
+  margin-bottom: 100px;
+}
+
+.button-item {
+  flex: 1; /* optional: to ensure the buttons take up equal space */
+}
+
